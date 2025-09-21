@@ -1,7 +1,7 @@
 export function confirmarAgregarProducto(nombreProducto) {
   return Swal.fire({
     title: '¿Agregar al carrito?',        
-    text: `¿Deseas agregar "${nombreProducto}" al carrito?`, 
+    text: `¿Deseas agregar "${nombreProducto}"?`, 
     icon: 'question',                     
     showCancelButton: true,               
     confirmButtonText: 'Sí, agregar',     
@@ -14,7 +14,7 @@ export function confirmarAgregarProducto(nombreProducto) {
 export function confirmarEliminarProducto(nombreProducto) {
   return Swal.fire({
     title: '¿Eliminar del carrito?',      
-    text: `¿Deseas eliminar "${nombreProducto}" del carrito?`, 
+    text: `¿Deseas eliminar "${nombreProducto}"?`, 
     icon: 'warning',                      
     showCancelButton: true,               
     confirmButtonText: 'Sí, eliminar',    
@@ -31,7 +31,7 @@ export function mostrarToastExito(mensaje) {
     icon: 'success',                      
     title: mensaje,                       
     showConfirmButton: false,             
-    timer: 3000,                          
+    timer: 1000,                          
     timerProgressBar: true                
   });
 }
